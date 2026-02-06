@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My REST API</title>
+    <style>
+        body{
+            margin-left:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>My REST API</h1>
+
+<p>
+This API manages Users, Income, and Expenses.  
+It helps you store and manage financial data in Firebase.
+</p>
+
+<h3>Available Endpoints</h3>
+
+<!-- USERS -->
+<h4>Users</h4>
+<ul>
+
+<li>
+<a href="/users">GET /users</a><br>
+Get a list of all users from the database
+</li>
+
+<li>
+POST /users<br>
+Add a new user to the database
+</li>
+
+<li>
+PUT /users/:id<br>
+Update user details using ID
+</li>
+
+<li>
+DELETE /users/:id<br>
+Delete a user using ID
+</li>
+
+</ul>
+
+<!-- EXPENSES -->
+<h4>Expenses</h4>
+<ul>
+
+<li>
+<a href="/expenses">GET /expenses</a><br>
+Get all expenses from the database
+</li>
+
+<li>
+POST /expenses<br>
+Add a new expense
+</li>
+
+<li>
+PUT /expenses/:id<br>
+Update an expense using ID
+</li>
+
+<li>
+DELETE /expenses/:id<br>
+Delete an expense using ID
+</li>
+
+</ul>
+
+<!-- INCOME -->
+<h4>Income</h4>
+<ul>
+
+<li>
+<a href="/income">GET /income</a><br>
+Get all income records
+</li>
+
+<li>
+POST /income<br>
+Add new income data
+</li>
+
+<li>
+PUT /income/:id<br>
+Update income using ID
+</li>
+
+<li>
+DELETE /income/:id<br>
+Delete income using ID
+</li>
+
+</ul>
+
+<p>
+Click the GET links to see data from Firebase.  
+Use Postman or Thunder Client for POST, PUT, and DELETE.
+</p>
+
+</body>
+</html>
