@@ -5,6 +5,7 @@ const router = express.Router();
 const exp = require("../controllers/expensecontroller");
 
 router.get("/",exp.getExpenses);
+router.get("/:id",exp.getExpenses);
 router.post("/", exp.addExpense);
 router.put("/:id", exp.updateExpense);
 router.delete("/:id", exp.deleteExpense);
